@@ -1,0 +1,51 @@
+@charset "utf-8";
+:root{
+/* color variables*/
+--clr-primary:#94ceb5;
+--clr-primary-hover: #6e02b6;
+--clr-gray100: #f0f7f8;
+--clr-gray200: #cfd8dc;
+/*border radius*/
+--radius: 0.2rem;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background: var(--clr-gray100);
+    align-items: center;
+}
+.nav-list{
+    background:white;
+    box-shadow:0px 0px 10px var(--clr-gray200);
+    margin:0;
+    padding: 1rem 0;
+    border-radius:var(--radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 2rem;
+}
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    transition: all 200ms ease-in;
+}
+.nav-item a:hover{
+    color: var(--clr-primary-hover);
+}
+header{
+    font-family: "Montserrat";
+    font-size: xx-large;
+    color:#6e02b6;
+}
+.container{
+    display: grid;
+}
