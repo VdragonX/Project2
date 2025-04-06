@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+<meta  charset="utf-8">
+<title>Project 2</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
+      rel="stylesheet">
+</head>
+
+<body>
+<header><h1>PORTO'S</h1></header>
+<header><h2>Special Occasions and Seasonal items</h2></header>
+<navbar>
+  <ul class="nav-list">
+    <li class="nav-item">
+     <a href="index.html">HOME</a>
+    </li>
+    <li class="nav-item">
+     <a href="careers.html">Careers</a>
+    </li>
+    <li class="nav-item">
+     <a href="special.html">Special/Seasonal</a>
+    </li>
+    <li class="nav-item">
+     <a href="Community.html">Community</a>
+    </li>
+    <li class="nav-item">
+     <a href="History.html">History</a>
+    </li>
+  </ul>
+  </navbar>
+  <div class="my-grid-container">
+    <div>Weddings
+        <img src="Weddingcake.jpg">
+    </div>
+    <div>Catering
+        <img src="catering.jpg">
+    </div>
+    <div>Holiday specials
+        <img src="holidaybread.jpg">
+    </div>
+    <div>Order form
+      <form>
+     <label for="firstname">First Name</label>
+     <input type="text" id="firstname" name="firstname" placeholder="First Name">
+     <br><br>
+     <label for="lastname">Last Name</label>
+     <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+     <br><br>
+     <label for="eventtype" >What kind of event?</label>
+     <select name="eventtype" id="eventtype">
+      <option disabled selected value>-- select an option --</option>
+      <option value="wedding">Wedding</option>
+      <option value="office">Office</option>
+      <option value="private event">Private event</option>
+      </select>
+      <br><br>
+     <label for="dateofevent">Day of Event?</Label>
+      <input type="date" id="datepicker" name="datepicker">
+     </select>
+     <br><br>
+     <label for="guestnumber">Number of Guests?</label>
+     <br><br>
+      <input type="radio" id="0-100" name="guestnumber" value="100">
+      <label for="0-100">0 - 100</label>
+      <input type="radio" id="100-200" name="guestnumber" value="200">
+      <label for="0-100">100 - 200</label>
+      <input type="radio" id="200-300" name="guestnumber" value="300">
+      <label for="0-100">200 - 300</label>
+      <input type="radio" id="300-400" name="guestnumber" value="400">
+      <label for="0-100">300 - 500</label>
+      <input type="radio" id="500+" name="guestnumber" value="500+">
+      <label for="500+">500+</label>
+      <br><br>
+    <label for="Comments">Comments and/or Special Instructions</label>
+      <br>
+      <textarea name="Comments" id="Comments" placeholder="Please leave a comment or special instructions for this event....."></textarea>
+      <br><br>
+      <button type="submit" value="submit">Send order</button>
+      <button type="reset" value="reset">Reset</button>
+    </form>
+    </div>
+</body>
+<footer>
+  <p>Last updated on April 5th</p>
+  <p><a href="mailto:Portos@Buisness.com">Email Us!</a></p>
+  <p><a href="tel:5628628888">Call us!</a></p>
+</footer>
+</html>

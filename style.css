@@ -8,16 +8,10 @@
 /*border radius*/
 --radius: 0.2rem;
 }
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
 body{
     font-family: "Montserrat", sans-serif;
     background: var(--clr-gray100);
-    align-items: center;
+    text-align: center;
 }
 .nav-list{
     background:white;
@@ -25,15 +19,15 @@ body{
     margin:0;
     padding: 1rem 0;
     border-radius:var(--radius);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .nav-item{
+    display: inline;
     list-style: none;
     margin-right: 2rem;
+    
 }
 .nav-item a {
+    
     text-decoration: none;
     color: black;
     transition: all 200ms ease-in;
@@ -46,6 +40,49 @@ header{
     font-size: xx-large;
     color:#6e02b6;
 }
-.container{
+div{
     display: grid;
+    grid-template-columns: auto;
+}
+.my-grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+.my-grid-container > div {
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+    background-color: var(--clr-primary-hover);
+    display: grid;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    height: auto;
+    color: white;
+    
+  }
+  
+.my-grid-container > .myClass:first-child {
+      grid-row: 1 / 2 ;
+  }
+
+.footer{
+   align-items: center;
+}
+img{
+    max-width: 700px;
+    max-height: 700px;
+}
+.gallery{
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 60%);
+    margin: 5px;
+}
+.gallery .description{
+    padding: 10px;
+    text-align: center;
+}
+.gallery:hover{
+    border: 1px solid hsl(0, 0%, 20%)
 }
